@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Signika|Ubuntu');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-image: url(../img/body.png);
+	background-repeat: no-repeat;
+
+	font-family: Signika;
+	font-weight: 300;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+p{
+	line-height: 28px;
+}
+
+a{
+	color:#1b75ba;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+	color: #004478;
+	outline: 0;
+}
+
+hr{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*HEADER BEGIN*/
+
+.navbar{
+	font-weight: 800;
+	font-size: 14px;
+	/*padding-top: 15px;
+	padding-bottom: 15px;*/
+}
+
+.navbar-inverse{
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	border: none;
+	height: 140px;
+}
+.navbar-toggle{
+	background-color: #0f5fa4;
+	border: none;
+	top: 45px;
+}
+
+.logo{
+
+	background: url(../img/logo.png) no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	margin-top: 25px;
+	width: 288px ;
+	height: 90px;
+}
+
+.navbar-second>li{
+	padding: 5px 0;
+	font-size:18px;
+}
+
+.second-menu{
+	position: absolute;
+	right: 15%;
+	top: 65px;
+}
+
+.navbar-first{
+	background: blue;
+	border-radius: 0 0 5px 5px;
+	display: flex;
+}
+
+.li-reg {
+	padding: 5px 20px;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+.li-log {
+	padding: 5px 20px;
+	color: white;
+	border-left: 1px solid rgba(255,255,255,.4);
+	cursor: pointer;
+}
+
+
+
+.fa{
+	padding-right: 5px;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	color:#1b75ba;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+	color:blue;
+}
+
+.ucase{
+	text-transform: uppercase;
+}
+
+.navbar-second>li:first-child{
+	padding-right: 60px;
+}
+
+.navbar-second>li:last-child{
+	padding-left: 60px;
+}
+
+/* end header*/
+
+/*content*/
+#content-wrapper{
+	margin-top: 130px;
+	
+
+}
+#content{
+	width: 65%;
+	background: url(../img/header.jpg) repeat-y;
+	float:left;
+	margin-right: 30px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.content-name{
+	text-align: center;
+	margin-top:30px;
+}
+
+.con-name{
+	font-size: 50px;
+	color:#d93655;
+}
+
+.con-nav{
+	margin-top: 30px;
+	border-bottom: 1.5px solid #9f9e9e;
+	padding-bottom: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.con-buttom{
+	background:url(../img/buttom.png) no-repeat;
+	float:left;
+	height: 30px;
+	width: 70px;
+
+}
+
+.con-num-cen{
+	position: relative;
+	text-align: center;
+	left: -30px;
+}
+
+.con-num{
+	color: #9f9e9e;
+	font-size: 16px;
+	/*padding-left: 35%;*/
+	text-align: center;
+	position: relative;
+	margin:auto;
+}
+
+
+.desk-con{
+	font-size: 16px;
+	padding: 15px 30px 0px 30px;
+	font-family: Ubunty;
+	color: #9f9e9e;	
+}
+
+.form-con{
+	border-bottom: 1.5px solid #9f9e9e;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+
+}
+
+.poick_os input {  
+	float:left;  
+	margin:0px;  
+	vertical-align:middle;  
+	font:11px Verdana,Arial,Helvetica,sans-serif; 
+	
+}  
+
+.poick_pole {  
+	background: #ebebeb;
+	width:94%;  
+	height:30px;  
+	border: 1.5px solid #9f9e9e;
+	border-radius: 5px;
+	padding: 7px;
+}  
+
+.poick_knopka {   
+	border:none;  
+	margin:0;
+	vertical-align: middle;
+}  
+
+.bon-pinner{
+	position: absolute;
+  background: url(../img/pin.png)no-repeat;
+  height: 50px;
+  width: 50px;
+  left: -14px;
+  top: 30px;
+}
+
+.prokrutka {
+	width:100%; 
+	height:620px; 
+	overflow: auto; 
+}
+
+ul.elements{
+	display:table;-webkit-transition: all .10s ;
+	transition: all .10s ; 
+	margin-right: 30px;
+	margin-left: 30px;
+}
+li#elem{
+	list-style:none;
+	float:left;
+	width:210px;
+	height:250px;
+	padding:5px; 
+	margin:5px; 
+	text-align:center;
+	-webkit-transition: all .10s ;
+	transition: all .10s ;}
+
+	li#elem:hover{
+		background: #e0dddd;
+		-webkit-transition: all .10s ;
+		transition: all .10s ;
+		border-radius: 10px;
+	}
+
+	#img{background: url(../img/product.png)no-repeat;   
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		display:block;
+		margin-bottom: 30px;
+		background-size: cover;}
+
+		#e{
+			color:#1b75ba;
+		}
+
+		.price{
+			color:#d93655;
+		} 
+
+		.end-con{
+			margin-top:30px;
+		}
+
+		.foot-con{
+			text-align: center;
+			color:#8f8f8f;
+			font-family: Ubuntu;
+			font-size: 14px;
+		}
+
+		#sidebar{
+			width: 30%;
+			float: left;
+			background: url(../img/page.png) no-repeat ;
+			height: 825px;
+			border-radius: 10px;
+		}
+
+		.head-sidebar{
+			background: url(../img/sidebar-h.png) repeat-x;
+			border-radius: 10px 10px 0px 0px ;
+			margin: 0px;
+			padding: 0px;
+			width: auto;
+			height: 60px;
+			position: relative;
+		}
+
+		.block-name{
+			text-align: center;
+			padding-top: 20px;
+			float:left;
+			margin-right: 12%;
+			margin-left: 13%;
+		}
+
+		.name-sidebar{
+			font-size: 18px;
+			font-family: Ubuntu;
+			font-weight:bold;
+			color: white;	
+		}
+
+		.pen-s{
+			background: url(../img/Pen.png) no-repeat  center center;
+			height: 40px;
+			width: 40px;
+			float:left;
+			margin-top: 7px;
+			margin-right: 7px;
+			border: 2px solid #033357;
+			border-radius: 6px;
+		}
+
+
+		.shape{
+			background: url(../img/shape.png) no-repeat  center center;
+			height: 40px;
+			width: 40px;
+			float:left;
+			margin-top: 7px;
+			margin-left: 7px;
+			border: 2px solid #033357;
+			border-radius: 6px;
+		}
+
+		.product{
+			position: relative;
+			margin-top:25px;
+			margin-left: 7px;
+		}
+
+		.bon{
+			background: url(../img/bon.png) no-repeat center center;
+			height: 108px;
+			width: 108px;
+			background-color: white;
+			float:left;
+
+		}
+
+		.read{
+			font-family: Ubuntu;
+			color: #a3acb3;
+			margin-top: 20px;
+			font-size: 12px;
+		}
+
+		.descript{
+			font-family: Pacifico;
+			font-size: 18px;
+			color: #464545;
+			line-height:10px;
+		}
+
+		.product-2{
+			position: relative;
+			margin-top:45px;
+			margin-left: 15px;
+		}
+
+		.prokrutka-s{
+			width:100%; 
+			height:585px;
+			overflow: auto; 
+		}
+
+		.im{
+			background: url(../img/product-2.png) no-repeat center center;
+			height: 80px;
+			width: 80px;
+			background-color: white;
+			float:left;
+			background-size: 70px;
+			margin-right: 15px;
+		}
+
+.button-s{
+	width: 130px;
+	height: 40px;
+	background-color: white;
+	margin-top: 15px;
+	border: 1px solid transparent;
+    border-radius: 5px;
+ 
+}
+
+
+
+.but-pinner{
+	position: absolute;
+  background: url(../img/pin.png)no-repeat;
+  height: 50px;
+  width: 50px;
+  left: -14px;
+  top: 30px;
+}
+
+.side-options{
+    position: relative;
+    width: 95%;
+    background: #db405e;
+    margin: auto;
+    height: 90px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+		}
+
+		.form-sidebar{
+       width: 145px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: coral;
+    font-weight: 500;
+}
+
+.optionstag{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Ubuntu;
+	color: coral;
+}
+
+
+.foot-sidebar{
+background: url(../img/sidebar-h.png) repeat-x;
+			border-radius: 0px 0px 10px 10px ;
+			width: 342px;
+			height: 55px;
+			position: absolute;	
+}
+
+.fot-names{
+margin: 10px;
+border: 2px solid #033357;
+border-radius: 6px;
+
+}
+
+.nf-sb{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Ubuntu;
+padding: 10px 80px;
+color: white;
+text-align: center;
+
+}
+
+.cont{
+	position: absolute;
+ 
+	background: #e7e7e7;
+	width: 324px;
+	height: 94px;
+	margin-top: 70px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 6px;
+}
+
+.cont-b{
+	background-color: white;
+	margin-top:35px; 
+	height:35px;
+	width:205px;
+border-radius: 3px;
+margin-left: 60px;
+}
+
+.cont-n{
+font-size: 14px;
+font-family: Ubuntu;
+padding:10px;
+
+color: #6d6d6d;
+
+}
+
+		.clear{
+			clear: both;
+		}
+
+		/*footer*/
+		footer{
+			border: none;
+			height: 340px;
+			margin-top: 90px;
+			bottom: 0;
+			width: 100%;
+
+			text-align: center;
+			background-image: url(../img/header.jpg);
+			background-repeat: repeat-y;
+
+		}
+
+		.logo-footer{
+			background: url(../img/logo.png) no-repeat;
+			background-size: 100%;
+			width: 288px ;
+			height: 90px;
+			margin: auto;
+			margin-top: 45px;
+			
+		}
+
+
+		.socnet{
+			margin-top: 25px;
+			width: 100%;
+		}
+
+
+
+		.socnet li{
+			margin-right: 20px;
+			display: inline-block;
+		}
+
+		.third-menu{
+			    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+		}
+
+
+		.third-menu li{
+			padding-left: 20px;	
+
+		}
+
+		.ucasef{
+			text-transform: uppercase;
+			font-size:16px;
+		}
+
+		.fot-name{
+			margin: auto;
+			margin-top:5px;
+		}
