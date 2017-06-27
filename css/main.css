@@ -3,17 +3,19 @@
 *{
 	padding: 0;
 	margin: 0;
+
 }
 
 body{
 	background-image: url(../img/body.png);
 	background-repeat: no-repeat;
-
+	background-size:cover;
 	font-family: Signika;
 	font-weight: 300;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
+
 }
 
 p{
@@ -41,9 +43,11 @@ hr{
 
 /*HEADER BEGIN*/
 
+
 .navbar{
 	font-weight: 800;
 	font-size: 14px;
+
 	/*padding-top: 15px;
 	padding-bottom: 15px;*/
 }
@@ -51,12 +55,14 @@ hr{
 .navbar-inverse{
 	background-image: url(../img/header.jpg);
 	background-repeat: no-repeat;
+	background-size:cover;
 	border: none;
 	height: 140px;
+
 }
 .navbar-toggle{
-	background-color: #0f5fa4;
-	border: none;
+	background-color: none;
+	border: 1px solid  #1b75ba;
 	top: 45px;
 }
 
@@ -75,14 +81,22 @@ hr{
 	font-size:18px;
 }
 
+.first-menu{
+	position: relative;
+	right: 15%;
+	top: 0px;
+}
+
 .second-menu{
+	
 	position: absolute;
 	right: 15%;
 	top: 65px;
+
 }
 
 .navbar-first{
-	background: blue;
+	background: #1b75ba;
 	border-radius: 0 0 5px 5px;
 	display: flex;
 }
@@ -132,18 +146,23 @@ hr{
 
 /*content*/
 #content-wrapper{
-	margin-top: 130px;
+	margin-top: 41px;
 	
 
 }
 #content{
-	width: 65%;
-	background: url(../img/header.jpg) repeat-y;
+	/*margin-left: 100px;*/
+	width: 572px ;
+	/*65%*/
+	background: url(../img/cont.jpg) repeat-y;
 	float:left;
-	margin-right: 30px;
+	margin-right: 35px;
 	height: auto;
-	border-radius: 10px;
+	border-radius: 4px;
 }
+
+
+
 
 .content-name{
 	text-align: center;
@@ -168,8 +187,9 @@ hr{
 	float:left;
 	height: 30px;
 	width: 70px;
-
 }
+
+
 
 .con-num-cen{
 	position: relative;
@@ -194,36 +214,49 @@ hr{
 	color: #9f9e9e;	
 }
 
+.search-form{
+	position: relative;
+	width: 100%;
+}
+
 .form-con{
 	border-bottom: 1.5px solid #9f9e9e;
 	margin-left: 30px;
 	margin-right: 30px;
 	padding-bottom: 30px;
 	padding-top: 20px;
-
+	  
 }
 
-.poick_os input {  
+/*.poick_os input {  
 	float:left;  
 	margin:0px;  
 	vertical-align:middle;  
-	font:11px Verdana,Arial,Helvetica,sans-serif; 
+	font:22px Verdana,Arial,Helvetica,sans-serif; 
 	
-}  
+} */ 
+
+
 
 .poick_pole {  
-	background: #ebebeb;
-	width:94%;  
-	height:30px;  
-	border: 1.5px solid #9f9e9e;
-	border-radius: 5px;
-	padding: 7px;
+	background: url(../img/search-cont.png) repeat;
+	background-size:cover;
+	width:100%;  
+	height:48px;  
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	padding-left: 16px;
+	vertical-align: center;
+	font-family: Signika;
+	font-size: 22px;
+		
 }  
 
-.poick_knopka {   
-	border:none;  
-	margin:0;
-	vertical-align: middle;
+ .search-form  .poick_knopka {   
+    position: absolute;
+    right: 45px;
+    top: 32px;
+
 }  
 
 .bon-pinner{
@@ -237,52 +270,134 @@ hr{
 
 .prokrutka {
 	width:100%; 
-	height:620px; 
+	height:645px; 
 	overflow: auto; 
 }
 
 ul.elements{
 	display:table;-webkit-transition: all .10s ;
 	transition: all .10s ; 
-	margin-right: 30px;
+/*	margin-right: 30px;*/
 	margin-left: 30px;
 }
 li#elem{
 	list-style:none;
 	float:left;
-	width:210px;
-	height:250px;
-	padding:5px; 
-	margin:5px; 
-	text-align:center;
+	width:150px;
+	height:210px;
+	padding: 15px 0px ; 
+	margin-right: 23px; 
+	/*text-align:center;*/
 	-webkit-transition: all .10s ;
 	transition: all .10s ;}
 
 	li#elem:hover{
-		background: #e0dddd;
+		background: #ffffff;
 		-webkit-transition: all .10s ;
 		transition: all .10s ;
-		border-radius: 10px;
+		border-radius: 10px;\
+		width: 220px;
+		height: 350px;
 	}
 
-	#img{background: url(../img/product.png)no-repeat;   
+.pr-hover{
+	font-family: Signika;
+	font-size: 14px;
+	color: #2a2a2a;
+	padding-left: 5px;
+}
+
+.but-hover{
+	background-color: #2bba0e;
+	width: 150px;
+	text-align: center;
+	vertical-align: middle;
+	height: 42px;
+	font-family: Ubuntu;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	border: 1px solid #676767;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+
+	.img-pr1{background: url(../img/product.png)no-repeat;   
 		height: 150px;
 		width: 150px;
 		margin: auto;
 		display:block;
 		margin-bottom: 30px;
+		border: 5px solid #ffffff;
 		background-size: cover;}
 
-		#e{
+.img-pr2{background: url(../img/pr-1.png)no-repeat;   
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		display:block;
+		margin-bottom: 30px;
+		border: 5px solid #ffffff;
+		background-size: cover;}
+
+.img-pr3{background: url(../img/pr-2.png)no-repeat;   
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		display:block;
+		margin-bottom: 30px;
+		border: 5px solid #ffffff;
+		background-size: cover;}
+
+.img-pr4{background: url(../img/pr-3.png)no-repeat;   
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		display:block;
+		margin-bottom: 30px;
+		border: 5px solid #ffffff;
+		background-size: cover;}
+
+.img-pr5{background: url(../img/pr-4.png)no-repeat;   
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		display:block;
+		margin-bottom: 30px;
+		border: 5px solid #ffffff;
+		background-size: cover;}
+
+.img-pr6{background: url(../img/pr-5.png)no-repeat;   
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		display:block;
+		margin-bottom: 30px;
+		border: 5px solid #ffffff;
+		background-size: cover;}
+
+		.name-pr{
 			color:#1b75ba;
+			float: left;
+			padding-left: 5px;
+			font-size: 14px;
+margin-top: -27px;
 		}
 
-		.price{
-			color:#d93655;
-		} 
+		.price-cont{
+			color:#d93655;	
+			float: left;
+			padding-left: 5px;
+			font-size: 14px;
+			margin-top: -27px;
+		}
+		
+
+		
 
 		.end-con{
-			margin-top:30px;
+			margin-bottom:30px;
+			margin-top: 20px;
 		}
 
 		.foot-con{
@@ -293,29 +408,34 @@ li#elem{
 		}
 
 		#sidebar{
-			width: 30%;
+			width: 355px ;
+			/*30%*/
 			float: left;
-			background: url(../img/page.png) no-repeat ;
-			height: 825px;
-			border-radius: 10px;
+			background: url(../img/page.png) repeat-y ;
+			height: 952px;
+			border-radius: 4px;
+			
 		}
 
 		.head-sidebar{
 			background: url(../img/sidebar-h.png) repeat-x;
-			border-radius: 10px 10px 0px 0px ;
+			border-radius: 4px 4px 0px 0px ;
 			margin: 0px;
 			padding: 0px;
 			width: auto;
-			height: 60px;
+			height: 58px;
 			position: relative;
+
 		}
 
 		.block-name{
 			text-align: center;
 			padding-top: 20px;
 			float:left;
-			margin-right: 12%;
-			margin-left: 13%;
+			margin-right: 14%;
+			margin-left: 14%;
+			text-align: center;
+			
 		}
 
 		.name-sidebar{
@@ -332,7 +452,7 @@ li#elem{
 			float:left;
 			margin-top: 7px;
 			margin-right: 7px;
-			border: 2px solid #033357;
+			border: 1px solid #033357;
 			border-radius: 6px;
 		}
 
@@ -344,7 +464,7 @@ li#elem{
 			float:left;
 			margin-top: 7px;
 			margin-left: 7px;
-			border: 2px solid #033357;
+			border: 1px solid #033357;
 			border-radius: 6px;
 		}
 
@@ -383,9 +503,14 @@ li#elem{
 			margin-left: 15px;
 		}
 
+.price{
+			color:#d93655;	
+			
+		}
+
 		.prokrutka-s{
 			width:100%; 
-			height:585px;
+			height:550px;
 			overflow: auto; 
 		}
 
@@ -452,17 +577,19 @@ li#elem{
 
 
 .foot-sidebar{
-background: url(../img/sidebar-h.png) repeat-x;
-			border-radius: 0px 0px 10px 10px ;
-			width: 342px;
-			height: 55px;
-			position: absolute;	
+background: url(../img/side-foot.png) repeat-x;
+			border-radius: 0px 0px 4px 4px ;
+			width: auto;
+			height: 90px;
+
+			
 }
 
 .fot-names{
-margin: 10px;
-border: 2px solid #033357;
-border-radius: 6px;
+/*margin: 50px;*/
+
+border: 1px solid #033357;
+border-radius: 4px;
 
 }
 
@@ -470,9 +597,10 @@ border-radius: 6px;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: Ubuntu;
-padding: 10px 80px;
+padding: 50px 80px;
 color: white;
 text-align: center;
+
 
 }
 
@@ -517,11 +645,11 @@ color: #6d6d6d;
 			margin-top: 90px;
 			bottom: 0;
 			width: 100%;
-
+	
 			text-align: center;
-			background-image: url(../img/header.jpg);
-			background-repeat: repeat-y;
-
+		background: url(../img/footer.jpg) repeat-y;
+		background-size: cover;
+			
 		}
 
 		.logo-footer{
@@ -530,25 +658,28 @@ color: #6d6d6d;
 			width: 288px ;
 			height: 90px;
 			margin: auto;
-			margin-top: 45px;
+			margin-top: 40px;
 			
 		}
 
 
 		.socnet{
-			margin-top: 25px;
+			margin-top: 5px;
 			width: 100%;
 		}
 
 
 
 		.socnet li{
-			margin-right: 20px;
+			margin-right: 30px;
 			display: inline-block;
+			position: relative;
+    overflow: hidden;
 		}
 
+	
 		.third-menu{
-			    margin-top: 10px;
+			    margin-top: 45px;
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -556,8 +687,9 @@ color: #6d6d6d;
 		}
 
 
+
 		.third-menu li{
-			padding-left: 20px;	
+			padding-left: 40px;	
 
 		}
 
@@ -566,7 +698,16 @@ color: #6d6d6d;
 			font-size:16px;
 		}
 
+
+
+
+
+
 		.fot-name{
 			margin: auto;
-			margin-top:5px;
+			margin-top: 25px;
+			font-size: 14px;
+			font-family: Signika;
+			color: #a2a2a2;
+			font-weight: normal;
 		}
