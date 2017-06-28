@@ -82,16 +82,16 @@ hr{
 }
 
 .first-menu{
-	position: relative;
-	right: 15%;
+	position: absolute;
+	right: 20%;
 	top: 0px;
 }
 
 .second-menu{
 	
 	position: absolute;
-	right: 15%;
-	top: 65px;
+	right: 21%;
+	margin-top: 65px;
 
 }
 
@@ -210,8 +210,9 @@ hr{
 .desk-con{
 	font-size: 16px;
 	padding: 15px 30px 0px 30px;
-	font-family: Ubunty;
+	font-family: Ubuntu;
 	color: #9f9e9e;	
+	
 }
 
 .search-form{
@@ -411,7 +412,7 @@ margin-top: -27px;
 			width: 355px ;
 			/*30%*/
 			float: left;
-			background: url(../img/page.png) repeat-y ;
+			background: url(../img/page.jpg) repeat-y ;
 			height: 952px;
 			border-radius: 4px;
 			
@@ -575,6 +576,13 @@ margin-top: -27px;
 	color: coral;
 }
 
+.logo-sb{
+	background: url(../img/logo-sb.png) no-repeat;
+	width: auto;
+	height: auto;
+	border: none;
+
+}
 
 .foot-sidebar{
 background: url(../img/side-foot.png) repeat-x;
@@ -586,23 +594,22 @@ background: url(../img/side-foot.png) repeat-x;
 }
 
 .fot-names{
-/*margin: 50px;*/
 
+background: url(../img/side-foot.png) no-repeat;
 border: 1px solid #033357;
 border-radius: 4px;
-
+width: 92%;
+height: 60px;
+font-size: 30px;
+font-weight: bold;
+font-family: Ubuntu;
+color: #ffffff;
+margin: 15px;
+bottom: 0px; 
+top: auto;
 }
 
-.nf-sb{
-	font-size: 20px;
-	font-weight: bold;
-	font-family: Ubuntu;
-padding: 50px 80px;
-color: white;
-text-align: center;
 
-
-}
 
 .cont{
 	position: absolute;
@@ -645,7 +652,6 @@ color: #6d6d6d;
 			margin-top: 90px;
 			bottom: 0;
 			width: 100%;
-	
 			text-align: center;
 		background: url(../img/footer.jpg) repeat-y;
 		background-size: cover;
@@ -666,32 +672,40 @@ color: #6d6d6d;
 		.socnet{
 			margin-top: 5px;
 			width: 100%;
+			margin: auto;
 		}
 
 
 
 		.socnet li{
-			margin-right: 30px;
+			
 			display: inline-block;
 			position: relative;
     overflow: hidden;
 		}
-
+ 
+ .twitter{
+ 	margin-right: 30px;
+ }
 	
 		.third-menu{
 			    margin-top: 45px;
-    position: relative;
+    position: static;
     overflow: hidden;
     display: inline-block;
-
+	
 		}
 
 
 
-		.third-menu li{
+		.navbar-third li{
 			padding-left: 40px;	
-
 		}
+
+.navbar-third li:first-child{
+			padding-left: 0px;	
+		}
+
 
 		.ucasef{
 			text-transform: uppercase;
