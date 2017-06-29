@@ -4687,7 +4687,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  /*border-color: #101010;*/
+/*  background: url(../img/header.png) no-repeat;*/
+/*background-size: cover;*/
+
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
