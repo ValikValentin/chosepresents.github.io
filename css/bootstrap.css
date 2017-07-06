@@ -1607,13 +1607,12 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-     padding-right: 5px;
-  padding-left: 5px;
-    width: 1170px;
+    /* padding-right: 5px;
+  padding-left: 5px;*/
+    width: 1200px;
 margin-right: 20%;
   margin-left: 20%;
   }
-
 
 
 }
@@ -4244,7 +4243,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -30px;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4688,8 +4687,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   /*border-color: #101010;*/
-/*  background: url(../img/header.png) no-repeat;*/
+  background: url(../img/header.png) no-repeat;
 /*background-size: cover;*/
+    height: 120px;
+    /* width: auto; */
+    margin-top: 23px;
 
 }
 .navbar-inverse .navbar-nav > .open > a,
